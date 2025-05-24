@@ -1,0 +1,7 @@
+import { Chess } from 'chess.js';
+const game = new Chess();
+function makeMove() {
+  let move = window.prompt('Enter your move (e.g., e2e4):');
+  game.move(move);
+  console.log(game.fen());
+}
